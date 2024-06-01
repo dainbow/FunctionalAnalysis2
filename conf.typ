@@ -19,6 +19,8 @@
   #cont
 ]
 
+#let weak = $attach(->, t: w)$
+
 #let conf(title, doc) = {
   set page(paper: "a4", numbering: "1", header: align(right + horizon, title))
   set par(leading: 0.55em, first-line-indent: 1.8em, justify: true)
