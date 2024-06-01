@@ -5,11 +5,18 @@
 
 #let theorem = thmbox("theorem", "Теорема", fill: rgb("#eeffee"))
 
-#let corollary = thmplain("corollary", "Corollary", base: "theorem", titlefmt: strong)
+#let corollary = thmplain("corollary", "Следствие", base: "theorem", titlefmt: strong)
 #let definition = thmbox("definition", "Определение", inset: (x: 1.2em, top: 1em))
+#let note = thmbox("note", "Замечание", inset: (x: 1.2em, top: 1em))
 
 #let example = thmplain("example", "Пример").with(numbering: none)
 #let proof = thmproof("proof", "Доказательство")
+
+#let seq(idx: "n", start: "1", end: $oo$, name) = ${name_idx}_(idx = start)^end$
+
+#let eq(cont) = align(center)[
+  #cont
+]
 
 #let conf(title, doc) = {
   set page(paper: "a4", numbering: "1", header: align(right + horizon, title))
