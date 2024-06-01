@@ -71,7 +71,7 @@
   )[
     $x_n weak x <=> cases(
       seq(norm(x)) "ограничена",
-      exists S : space [angle.l S angle.r] = E : space forall f in S : space f(x_n) -> f(x),
+      exists S : space [angle.l S angle.r] = E^* : space forall f in S : space f(x_n) -> f(x),
 
     )$
   ]
