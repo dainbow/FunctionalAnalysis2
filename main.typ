@@ -14,8 +14,11 @@
   Disclaymer: доверять этому конспекту или нет выбирайте сами
 ]
 
-#align(center)[
-  Big thanks for #link("https://t.me/ltc2021", "клуб Теха Лекций") и #link("https://t.me/wolfawi", "Максимову Даниилу") в частности.
+#align(
+  center,
+)[
+  Big thanks for #link("https://t.me/ltc2021", "клуб Теха Лекций") и #link("https://t.me/wolfawi", "Максимову Даниилу") в
+  частности.
 ]
 
 #include "themes/1.typ"
@@ -25,3 +28,4 @@
 #include "themes/5.typ"
 #include "themes/6.typ"
 #include "themes/7.typ"
+#include "themes/8.typ"
