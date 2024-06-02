@@ -68,7 +68,7 @@
 
   Рассмотрим следующую тривиальную цепочку равенств:
   #eq[
-    $R_lambda - R_lambda_0 = R_lambda underbrace(A_lambda_0 R_lambda_0, I) - underbrace(A_lambda R_lambda, I)R_lambda_0 = \ R_lambda(A_lambda_0 - A_lambda)R_lambda_0 &= R_lambda(lambda - lambda_0)R_lambda_0 = (lambda - lambda_0)R_lambda R_lambda_0$
+    $R_lambda - R_lambda_0 = R_lambda underbrace(A_lambda_0 R_lambda_0, I) - underbrace(A_lambda R_lambda, I)R_lambda_0 = \ R_lambda (A_lambda_0 - A_lambda)R_lambda_0 &= R_lambda (lambda - lambda_0)R_lambda_0 = (lambda - lambda_0)R_lambda R_lambda_0$
   ]
 ]
 

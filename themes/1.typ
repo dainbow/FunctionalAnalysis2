@@ -85,7 +85,7 @@
   - $E^(**) = cal(L)(E^*, KK)$
   - Пространство $E^*$ всегда полно
   - Нормы $norm(F_x_n) = norm(x_n)$ ограничены
-  - $exists S : space [S] = E^* : space forall f in S : space F_x_n f -> F_x f$
+  - $exists S : space [angle.l S angle.r] = E^* : space forall f in S : space F_x_n f -> F_x f$
 
   Эти условия позволяют нам применить упомянутый выше критерий поточечной
   сходимости операторов из предыдущего семестра. А поточечная сходимость
