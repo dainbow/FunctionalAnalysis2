@@ -182,7 +182,7 @@
 #theorem("Основная теорема о спектре")[
   Спектр оператора непуст:
   #eq[
-    $sigma(A) != 0$
+    $sigma(A) != emptyset$
   ]
 ]
 
@@ -202,6 +202,8 @@
 #definition[
   Рассмотрим оператор $A in cal(L)(E)$. Тогда
   - $sigma_p(A) := {lambda in sigma(A) | "Ker" A_lambda != {0}}$ -- *точечный спектр*.
+  
+    Причём $v in "Ker" A_lambda$ называются *собственными векторами* для *собственного значения* $lambda$. 
   - $sigma_c(A) := {lambda in sigma(A) | "Ker" A_lambda = {0} and "Im" A_lambda != E and ["Im" A_lambda] = E}$ -- *непрерывный спектр*.
   - $sigma_r(A) := {lambda in sigma(A) | "Ker" A_lambda = {0} and ["Im" A_lambda] != E}$ -- *остаточный спектр*.
 ]
