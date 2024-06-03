@@ -72,7 +72,7 @@
   #eq[
     $exists m > 0 : forall x in H : space norm(A^* x) >= m norm(x) <=> exists m > 0 : forall x in H : norm(A^* x) = 1 : space norm(x) <= 1 / m$
   ]
-  Обозначим рассматриваемое подпространство
+  Обозначим рассматриваемое подмножество
   #eq[
     $S := {x in H | norm(A^* x) = 1}$
   ]

@@ -12,11 +12,23 @@
   + $norm(tilde(f)) = norm(f)$
 ]
 
-#corollary(
-  )[
-  #align(
-    center,
-  )[$forall x in E : norm(x) = sup_(f in E^*, norm(f)_(E^*)=1) abs(f(x)) $]
+#corollary[
+  Выполняются следующие утверждения:
+  - $forall f in E^* : space f(x) = f(y) => x = y$
+  - $forall f in E^* : space f(x) = 0 => x = 0$
+]
+
+#corollary[
+  Если $x in E$, то
+  #eq[
+    $exists f in E^* : space cases(norm(f) = 1, f(x) = norm(x))$
+  ]
+]
+
+#corollary[
+  #eq[
+    $forall x in E : norm(x) = sup_(f in E^*, norm(f)_(E^*)=1) abs(f(x)) $
+  ]
 ]
 
 #theorem("Об изометрии")[
@@ -89,7 +101,7 @@
 
   Эти условия позволяют нам применить упомянутый выше критерий поточечной
   сходимости операторов из предыдущего семестра. А поточечная сходимость
-  оператором во всём пространстве соответствует $x_n weak x$.
+  операторов во всём пространстве соответствует $x_n weak x$.
 ]
 
 #note[
