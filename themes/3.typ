@@ -62,3 +62,49 @@
       $H = ["Im" A] plus.circle ["Im" A]^bot = ["Im" A] plus.circle "Ker" A^*$
     ]
 ]
+
+#proposition[
+  Если $A in cal(L)(H)$, где $H$ -- гильбертово, то оператор $A^*$ (эрмитово сопряжённый) ограничен снизу.
+]
+
+#proof[
+  Заметим, что свойство ограниченности снизу имеет эквивалентный вариант (в силу линейности):
+  #eq[
+    $exists m > 0 : forall x in H : space norm(A^* x) >= m norm(x) <=> exists m > 0 : forall x in H : norm(A^* x) = 1 : space norm(x) <= 1 / m$
+  ]
+  Обозначим рассматриваемое подпространство
+  #eq[
+    $S := {x in H | norm(A^* x) = 1}$
+  ]
+  Таким образом, задача свелась к доказательству ограниченности $S$.
+
+  А как мы знаем, ограниченность эквивалентна слабой ограниченности. Более того, мы находимся в Гильбертовом пространстве $H$, а значит каждый функционал представляется в виде $(y, dot)$:
+  #eq[
+    $forall y in H : exists K_y in RR_+ : space forall x in S : abs((y, x)) <= K_y$
+  ]
+  Однако, $A$ -- сюръекция, а значит для любого $y in H$ найдётся $z in H$ такой, что $A z = y$. Отсюда:
+  #eq[
+    $forall z in H : exists K_z in RR_+ : space forall x in S : abs((A z, x)) = abs((z, A^* x)) <= 1 dot norm(z) =: K_z$
+  ]
+]
+
+#proposition[
+  Пусть $B in cal(L)(H)$ и $B$ ограничен снизу. Тогда $["Im" B] = "Im" B$.
+]
+
+#proof[
+  Пусть $seq(y) subset "Im" B$ и $lim_(n -> oo) y_n = y$. Докажем, что $y in "Im" B$. 
+
+  В силу сходимости есть и фундаментальность:
+  #eq[
+    $forall epsilon > 0 : exists N in NN : space forall n >= N : forall p in NN : space norm(y_(n + p) - y_n) < epsilon$
+  ]
+  Коль скоро $y_n in "Im" B$, то можно переписать норму разности следующим образом:
+  #eq[
+    $norm(y_(n + p) - y_n) = norm(B z_(n + p) - B z_n) > m norm(z_(n + p) - z_n)$
+  ]
+  Стало быть, $seq(z)$ фундаментальна, а в силу полноты $H$ должен существовать предел $lim_(n -> oo) z_n = z$. Тогда
+  #eq[
+    $y = lim_(n -> oo) B z_n = B(lim_(n -> oo) z_n) = B z$
+  ]
+]
