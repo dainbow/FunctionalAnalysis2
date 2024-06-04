@@ -215,34 +215,35 @@
 #proposition[
   Для компактного самосопряжённого оператора верно:
   #eq[
-    $["Im" A_lambda] = "Im" A_lambda$
+    $forall lambda != 0: ["Im" A_lambda] = "Im" A_lambda$
   ]
   Иначе говоря, образ $A_lambda$ замкнут.
 ]
 
 #proof[
   Применим лемму об инвариантности. Заметим, что $M = "Ker" A_lambda$ инвариантен
-  относительно $A$ и $A_lambda$, а значит и $M^bot = ["Im" A_lambda]$ инвариантен
-  относительно тех же операторов.
-
-  Если мы докажем, что $A_lambda |_(["Im" A_lambda])$ является сюръективным
-  оператором, то всё будет доказано.
-
-  Действительно, получим тогда $["Im" A_lambda] = A_lambda (["Im" A_lambda]) subset.eq "Im" A_lambda$.
+  относительно $A$, а значит и $M^bot = ["Im" A_lambda]$ также инвариантно.
 
   Обозначим $tilde(A) := A|_(["Im" A_lambda])$. Это тоже компактный
-  самосопряжённый оператор, действующий из $["Im" A_lambda]$ в само себя. Заметим,
-  как связаны собственные значения $tilde(A)$ с исходными:
+  самосопряжённый оператор, действующий из $["Im" A_lambda]$ в само себя (благодаря инвариантности). 
+  Заметим, что у $tilde(A)$ нет собственных векторов, соответствующих $lambda$, так 
+  как они все лежат в  $"Ker" A_lambda$.
+  
+  Отсюда получаем, что $lambda in.not {0} union sigma_p (tilde(A))$. Следовательно 
+  $lambda in.not sigma (tilde(A))$. Значит оператор $tilde(A)_lambda$ обратим.
+
+  То есть, по определению обратимости, $tilde(A)_lambda$ биекция на $["Im" A_lambda]$, в частности сюръекция.
+  Значит $"Im" tilde(A)_lambda = ["Im" A_lambda]$. 
+
+  Распишем 
   #eq[
     $tilde(A)_lambda = tilde(A) - lambda I = A|_(["Im" A_lambda]) - lambda I|_(["Im" A_lambda]) = (A - lambda I)|_(["Im" A_lambda]) = tilde(A_lambda)$
   ]
-  А как мы знаем из теоремы Фредгольма для самосопряжённых операторов, все
-  собственные вектора лежат в другой части прямого разложения.
 
-  Раз так, то $lambda in.not {0} union sigma_p (tilde(A))$. А по одному из свойств
-  СЗ компактного оператора, может быть верно $lambda in rho(tilde(A))$. Значит,
-  оператор $tilde(A)_lambda = tilde(A_lambda)$ биективен, что включает в себя его
-  сюръективность.
+  Отсюда
+  $["Im" A_lambda] = "Im" tilde(A_lambda) = A_lambda (["Im" A_lambda]) subset "Im" A_lambda$
+
+  А значит $["Im" A_lambda] = "Im" A_lambda$
 ]
 
 #theorem[
