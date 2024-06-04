@@ -1,5 +1,6 @@
 #import "@preview/ctheorems:1.1.2": *
 #import "@preview/polytonoi:0.1.0": *
+#import "@preview/ouset:0.2.0": *
 
 #let gk = ptgk
 
@@ -19,7 +20,7 @@
   #cont
 ]
 
-#let weak = $attach(->, t: w)$
+#let weak = $overset(->, w)$
 
 #let conf(title, doc) = {
   set page(paper: "a4", numbering: "1", header: align(right + horizon, title))

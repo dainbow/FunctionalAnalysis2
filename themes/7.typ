@@ -85,7 +85,7 @@
     $epsilon_1(Delta x) ->_(Delta x -> 0) 0 => G'(y_0)[epsilon_1(Delta x)] ->_(Delta x -> 0) 0$
   ]
 
-  Для второого -- распишем $norm(Delta y)$:
+  Для второго -- распишем $norm(Delta y)$:
   #eq[
     $norm(Delta y) = norm(F'(x_0)[Delta x] + epsilon_1(Delta x)norm(Delta x)) <= (norm(F'(x_0)) + norm(epsilon_1(Delta x)))norm(Delta x)$
   ]
